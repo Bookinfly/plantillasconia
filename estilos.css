@@ -1,0 +1,90 @@
+/* Variables de color */
+:root {
+  --color-primario: #0d3b66;
+  --color-secundario: #faa916;
+  --color-fondo: #f8f9fa;
+  --color-texto: #333333;
+}
+
+/* Reset de body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  scroll-behavior: smooth;
+}
+
+/* Header fijo */
+header {
+  z-index: 1030;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-size: 1.8rem;
+  letter-spacing: 0.05em;
+}
+
+.nav-link {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--color-secundario) !important;
+}
+
+/* Secciones */
+section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* Títulos secciones */
+h1, h2, h4, h5 {
+  color: var(--color-primario);
+}
+
+/* Cards del equipo */
+.card {
+  border: none;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(13, 59, 102, 0.3);
+}
+
+/* Botones */
+.btn-primary {
+  background-color: var(--color-primario);
+  border-color: var(--color-primario);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-secundario);
+  border-color: var(--color-secundario);
+}
+
+/* Formularios */
+form label {
+  font-weight: 600;
+}
+
+form input, form textarea {
+  border-radius: 0.3rem;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+  border-color: var(--color-secundario);
+  outline: none;
+  box-shadow: 0 0 5px var(--color-secundario);
+}
